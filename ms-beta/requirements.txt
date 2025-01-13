@@ -1,0 +1,16 @@
+# App
+Flask==2.2.3
+Werkzeug==2.2.2
+
+# Database
+python-dotenv==0.20.0
+mysql-connector-python==8.0.29
+sqlalchemy==1.4.47
+Flask-SQLAlchemy==2.5.1
+
+# Conectar otro ms
+requests==2.26.0
+
+# Cache
+redis==3.5.3
+flask-caching==2.0.2

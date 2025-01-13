@@ -1,0 +1,1 @@
+mkcert -cert-file local2-cert.pem -key-file local2-key.pem "ingeprueba.localhost" "*.ingeprueba.localhost" "ingeprueba.local" "*.ingeprueba.local"

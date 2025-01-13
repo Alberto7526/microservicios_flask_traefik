@@ -1,0 +1,18 @@
+http:
+  routers:
+    traefik:
+      rule: "Host(`traefik.ingeprueba.localhost`)"
+      service: "api@internal" 
+      tls:
+        domains:
+          - main: "ingeprueba.localhost"
+            sans:
+              - "*.ingeprueba.localhost"
+          - main: "ingeprueba.local"
+            sans:
+              - "*.ingeprueba.local"
+
+tls:
+  certificates:
+    - certFile: "/etc/traefik/certs/local-cert.pem"
+      keyFile: "/etc/traefik/certs/local-key.pem"
